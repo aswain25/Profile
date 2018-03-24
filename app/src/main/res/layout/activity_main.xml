@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.profile.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="500px"
+                android:rowCount="1"
+                android:columnCount="3"
+                android:layout_row="0">
+                <ImageView android:layout_column="0"
+                    android:layout_width="400px"
+                    android:layout_height="400px"
+                    android:src="@drawable/trump"
+                    android:padding="20px"/>
+                <GridLayout android:layout_column="1" android:rowCount="4" android:columnCount="1">
+                    <TextView android:text="Name: " android:textSize="12pt" />
+                    <TextView android:text="Title:" android:textSize="12pt" />
+                    <TextView android:text="Rank: " android:textSize="12pt" />
+                </GridLayout>
+                <GridLayout android:layout_column="2" android:rowCount="4" android:columnCount="1">
+                    <TextView android:text="Donald J. Trump" android:textSize="12pt" />
+                    <TextView android:text="US President" android:textSize="12pt" />
+                    <TextView android:text="45th" android:textSize="12pt" />
+                </GridLayout>
+            </GridLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="80px" android:textSize="10pt" android:text="   Trump was born and raised in the New York City borough of Queens, and earned an economics degree from the Wharton School of the University of Pennsylvania. He took over his family's real estate business in 1971, renamed it The Trump Organization, and expanded it to involve the construction and renovation of skyscrapers, hotels, casinos, and golf courses. Trump also started various side ventures, including branding and licensing his name for real estate and luxury consumer products. He managed the company until his 2017 inauguration. Trump also gained prominence in media and entertainment. He co-authored several books, including The Art of the Deal, and from 2003 to 2015 he was a producer and the host of The Apprentice, a reality television game show. Trump owned the Miss Universe and Miss USA beauty pageants from 1996 to 2015. According to March 2018 figures by Forbes, he is the world's 766th richest person, with an estimated net worth of $3.1 billion." />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
